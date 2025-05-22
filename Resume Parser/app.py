@@ -18,7 +18,8 @@ logging.getLogger("pdfminer").setLevel(logging.ERROR)
 #import exceptions
 
 # Set up Groq LLM
-llm = ChatGroq(model="llama3-8b-8192", temperature=0)
+model_api_key = os.getenv('GROQ_API_KEY')
+llm = ChatGroq(groq_api_key=model_api_key,model="llama3-8b-8192", temperature=0)
 
 # Prompt template
 prompt = PromptTemplate.from_template("""
