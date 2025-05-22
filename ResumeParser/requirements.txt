@@ -1,0 +1,9 @@
+streamlit>=1.25
+pandas>=2.0
+pdfplumber>=0.11
+PyMuPDF>=1.22.0
+python-docx
+openpyxl
+langchain>=0.1.14
+langchain-groq>=0.3.2
+groq>=0.24.0
