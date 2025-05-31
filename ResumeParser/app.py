@@ -11,12 +11,12 @@ import logging
 import warnings
 import re
 import time
-from dotenv import load_dotenv
+
 # Suppress warnings
 warnings.filterwarnings("ignore", message="CropBox missing from /Page, defaulting to MediaBox")
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
-load_dotenv()
+
 # Initialize Groq client
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
