@@ -39,6 +39,7 @@ Respond with:
   "Phone": "...",
   "Location": "...",
   "Years of Experience": "..."
+  Do not return any explanation, markdown, or additional text.
 }
 """
 
