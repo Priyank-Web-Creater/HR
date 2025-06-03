@@ -11,6 +11,7 @@ import logging
 import warnings
 import re
 import time
+import textract
 
 # Suppress warnings
 warnings.filterwarnings("ignore", message="CropBox missing from /Page, defaulting to MediaBox")
