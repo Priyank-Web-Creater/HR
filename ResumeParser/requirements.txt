@@ -7,3 +7,4 @@ openpyxl
 langchain>=0.1.14
 langchain-groq>=0.3.2
 groq>=0.24.0
+textract
