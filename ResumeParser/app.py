@@ -88,7 +88,7 @@ st.title("📄 Wisdom Square Resume Parser")
 
 uploaded_files = st.file_uploader(
     "Upload Resume Files (PDF or DOCX)",
-    type=["pdf", "docx", "doc"],
+    type=["pdf", "docx"],
     accept_multiple_files=True
 )
 
@@ -110,12 +110,6 @@ if uploaded_files:
             resume_text = extract_text_from_pdf(tmp_path)
         elif ext == "docx":
             resume_text = extract_text_from_docx(tmp_path)
-        elif ext == "doc":
-            try:
-                resume_text = textract.process(tmp_path).decode("utf-8")
-            except Exception as e:
-                st.error(f"Failed to process .doc file {file.name}: {e}")
-                continue
         else:
             st.warning(f"Unsupported file type: {ext}")
             continue
