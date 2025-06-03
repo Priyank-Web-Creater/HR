@@ -39,8 +39,8 @@ Respond with:
   "Phone": "...",
   "Location": "...",
   "Years of Experience": "..."
-  Do not return any explanation, markdown, or additional text.
 }
+Do not return any explanation, markdown, or additional text.
 """
 
 # Extract text from PDF using PyMuPDF
